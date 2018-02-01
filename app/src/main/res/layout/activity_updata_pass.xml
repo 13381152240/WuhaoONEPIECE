@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/raw_1500974387"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/raw_1500363027"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/yijing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+
+        android:text="已有账号"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5a8c8168"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+    
+        <EditText
+            android:id="@+id/iduser"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:hint="请输入用户id"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:textColorHint="@android:color/white"
+            />
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#acaaac"
+            android:layout_marginTop="1dp"
+            />
+
+        <EditText
+            android:id="@+id/oldpass"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:hint="请输入旧密码"
+
+            android:background="@null"
+            android:layout_gravity="center"
+            android:textColorHint="@android:color/white"
+            />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#acaaac"
+            android:layout_marginTop="2dp"
+            />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:textColorHint="@android:color/white"
+            android:hint="输入大小写和数字,密码不能超过8位" />
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#acaaac"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/passs"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/number"
+            android:layout_alignStart="@+id/number"
+            android:layout_below="@+id/number"
+            android:layout_marginTop="14dp"
+
+            android:background="@null"
+            android:textColorHint="@android:color/white"
+            android:hint="请再次输入密码"
+            android:layout_gravity="center"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#f9cc6b"
+        android:text="完成"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/zhijie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#c9c3c3"
+        android:layout_marginTop="15dp"
+        android:text="游客登陆"
+        android:layout_below="@+id/finish"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

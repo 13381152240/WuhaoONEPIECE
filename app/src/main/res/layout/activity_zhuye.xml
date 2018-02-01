@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:background="@drawable/raw_1500865218"
+    android:id="@+id/linearLayout2">
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/raw_1500363027" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView15"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:text="用戶中心"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        app:srcCompat="@drawable/raw_1500363359" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+
+        android:layout_toEndOf="@+id/imageView16"
+        android:layout_toRightOf="@+id/imageView16"
+        app:srcCompat="@drawable/raw_1500363651" />
+</LinearLayout>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@mipmap/b"
+        fresco:placeholderImage="@mipmap/b"
+
+        fresco:roundAsCircle="true" />
+
+    <Button
+        android:id="@+id/guan"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/simpleDraweeView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/shape_b2"
+        android:layout_toEndOf="@+id/simpleDraweeView"
+        android:layout_toRightOf="@+id/simpleDraweeView"
+
+        android:hint="+关注" />
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="111dp"
+        fresco:roundAsCircle="true"
+        android:id="@+id/simpleDraweeView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/simpleDraweeView2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/simpleDraweeView2"
+        android:layout_toRightOf="@+id/simpleDraweeView2"
+        android:text="用戶名" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/simpleDraweeView2"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignRight="@+id/textView8"
+        android:text="創建時間" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/guan"
+        android:layout_toRightOf="@+id/guan"
+        app:srcCompat="@drawable/add" />
+
+    <VideoView
+        android:id="@+id/videovvv"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center" />
+v
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/simpleDraweeView2"
+        android:layout_alignStart="@+id/simpleDraweeView2"
+        android:layout_below="@+id/textView9"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/raw_1500974387"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/raw_1500363027"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/zhuceid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="注册账号"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5a8c8168"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:textColorHint="@android:color/white"
+            android:hint="账号" />
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#acaaac"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/number"
+            android:layout_alignStart="@+id/number"
+            android:layout_below="@+id/number"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:textColorHint="@android:color/white"
+            android:hint="密码"
+            android:layout_gravity="center"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/Llogin"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="#f9cc6b"
+        android:text="登陆"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="忘记密码"
+        android:textColor="#c9c3c3"
+        android:layout_below="@+id/Llogin"
+        android:layout_alignRight="@+id/Llogin"
+        android:layout_alignEnd="@+id/Llogin" />
+
+    <TextView
+        android:id="@+id/youke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#c9c3c3"
+        android:layout_marginTop="17dp"
+        android:text="游客登陆" />
+
+
+</RelativeLayout>

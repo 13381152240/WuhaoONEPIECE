@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_duanzi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        app:roundAsCircle="true"
+        app:placeholderImage="@mipmap/b" />
+
+    <TextView
+        android:id="@+id/title_duanzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_duanzi"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/image_duanzi"
+        android:layout_toRightOf="@+id/image_duanzi"
+        android:text="匿名" />
+
+    <TextView
+        android:id="@+id/time_duanzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_duanzi"
+        android:layout_alignStart="@+id/title_duanzi"
+        android:layout_below="@+id/title_duanzi"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/neirong_duanzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/time_duanzi"
+        android:layout_toRightOf="@+id/image_duanzi"
+        android:layout_toEndOf="@+id/image_duanzi" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:background="#fafafa"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title_duanzi"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从前有一位美人鱼爱上了人类的王子，她找到了巫婆，说：”无论如何都要见到他。“巫婆给了她一瓶魔药，
+说：“喝了它就会见到王子，但是你会变成泡沫。“美人鱼喝下了魔药，慢慢的她周围升起了泡沫。”
+她抬起头看见王子正深情的看着她，说：”哎！水开了，这鱼再给我加点酸菜呗。"
+        android:layout_below="@+id/image_duanzi"
+        android:layout_alignLeft="@+id/time_duanzi"
+        android:layout_alignStart="@+id/time_duanzi"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

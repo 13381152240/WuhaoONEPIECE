@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/bofang_fan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/bofang_aixin"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            app:srcCompat="@drawable/raw_1500019926" />
+
+        <ImageView
+            android:id="@+id/bofang_aixin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@+id/bofang_xinsui"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@+id/bofang_fan"
+            android:layout_toRightOf="@+id/bofang_fan"
+            app:srcCompat="@drawable/raw_1499933216" />
+
+        <ImageView
+            android:id="@+id/bofang_xinsui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/bofang_aixin"
+            android:layout_toRightOf="@+id/bofang_aixin"
+            app:srcCompat="@drawable/raw_1499933217" />
+
+        <ImageView
+            android:id="@+id/bofang_fenxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/bofang_xinsui"
+            android:layout_toRightOf="@+id/bofang_xinsui"
+            app:srcCompat="@drawable/raw_1499995160" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:placeholderImage="@mipmap/b"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="33dp"
+            app:roundAsCircle="true"
+            android:layout_marginRight="33dp"
+            />
+    </RelativeLayout>
+    <VideoView
+        android:id="@+id/videovv"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bofang_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/bofang_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bofang_cont"
+            android:layout_marginTop="13dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/bofang_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bofang_num"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/bofang_num"
+            android:layout_toRightOf="@+id/bofang_num"
+            android:text="TextView" />
+    </RelativeLayout>
+</LinearLayout>
+
